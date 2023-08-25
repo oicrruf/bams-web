@@ -5,31 +5,49 @@
 // * @ Creator: Carlos Moctezuma aka @crdgom
 
 
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react';
 
-function useForm (callback, defaults) {
-    const [input, setInput] = useState(defaults)
+function useForm(callback, defaults, validationSchema) {
+  const [input, setInput] = useState(defaults);
+  const [errors, setErrors] = useState({});
 
-    useEffect(()=> {
-        setInput({...defaults})
-    }, [])
+  useEffect(() => {
+    setInput({ ...defaults });
+  }, [defaults]);
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target
-        setInput({ ...input, [name]: value })
+  const validate = () => {
+    let newErrors = {};
+    for (const fieldName in validationSchema) {
+      const fieldValue = input[fieldName];
+      const fieldValidationFunction = validationSchema[fieldName];
+      const fieldError = fieldValidationFunction(fieldValue);
+      if (fieldError) {
+        newErrors[fieldName] = fieldError;
+      }
     }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        callback(input)
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInput({ ...input, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const isFormValid = validate();
+    if (isFormValid) {
+      callback(input);
     }
+  };
 
-    return {
-        input,
-        handleInputChange,
-        handleSubmit
-    }
-
+  return {
+    input,
+    errors,
+    handleInputChange,
+    handleSubmit
+  };
 }
 
-export default useForm
+export default useForm;
