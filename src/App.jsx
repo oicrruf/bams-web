@@ -1,5 +1,5 @@
 import './App.css'
-import Index from './pages/welcome/index'
+import Index from './pages/welcome/Welcome'
 
 function App() {
 
