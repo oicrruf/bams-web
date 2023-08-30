@@ -5,14 +5,13 @@ import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
-   <div className="container" /*style={{height: '100vh'}}8*/>
-  
-  <div className="d-inline-flex flex-row justify-content-center align-items-center" id="screenSignUp">
+   <div className="container">
+  <div className="d-inline-flex flex-row justify-content-between align-items-center" id="screenSignUp">
     <div className="logo">
       <img src={Logo} alt="High_Building" className="img-fluid" />
     </div>
     <div>
-      <form id="formTwo">
+      <form id="formRegister">
         <h1>Bienvenid@s <br /> a BAMS</h1>
         <p>¿Eres administrador de un condominio?
           <br />
@@ -30,13 +29,11 @@ const Register = () => {
           <label htmlFor="inputVerifyPassword" className="form-label">Confirma tu contraseña</label>
           <input type="password" className="form-control" id="inputVerifyPassword" placeholder="Ingresa tu contraseña" />
         </div>
-        <Link to='login'>Register</Link> 
-        {/* <button type="submit" className="btn btn-primary btn-lg">Registrar</button> */}
-        <p id="footer">¿Ya estas registrado? <a href="#screenLogin" className="text-decoration-none">inicia sesion</a> </p>
+        <Link to='../Login'className="btn btn-primary btn-lg">Register</Link> 
+        <p id="footer">¿Ya estas registrado? <Link to='Login' className="text-decoration-none">inicia sesion</Link> </p>
       </form>
     </div>
   </div>
- 
 </div>
   )
 }

@@ -1,11 +1,11 @@
 import './App.css'
-import Index from './pages/welcome/Welcome'
+import Welcome from './pages/welcome/Welcome'
 
 function App() {
 
   return (
     <div className='App'>
-      <Index />
+      <Welcome />
     </div>
   )
 }
