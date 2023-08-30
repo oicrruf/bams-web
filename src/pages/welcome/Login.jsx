@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
-   <div className="container" /*style={{height: '100vh'}}8*/>
+   <div className="container">
 
-  <div className="d-inline-flex flex-row justify-content-center align-items-center" id="screenLogin">
+  <div className="d-inline-flex flex-row justify-content-between align-items-center" id="screenLogin">
     <div className="logo">
       <img src={Logo} alt="High_Building" className="img-fluid" />
     </div>
