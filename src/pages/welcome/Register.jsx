@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 import Logo from './Logo.png';
 import { Link } from 'react-router-dom';

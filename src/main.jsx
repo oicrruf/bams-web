@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import Register from './pages/welcome/Register.jsx';
 import Login from './pages/welcome/Login.jsx';
+import PasswordReset from './pages/welcome/PasswordReset.jsx';
+import PasswordUpdateForm from './pages/welcome/PasswordUpdateForm.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login/>,
   },
+  {
+    path: "/password-reset",
+    element: <PasswordReset/>,
+  },
+  {
+    path: "/password-update",
+    element: <PasswordUpdateForm/>,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

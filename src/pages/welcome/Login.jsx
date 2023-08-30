@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './index.css';
 import Logo from './Logo.png';
 import { Link } from 'react-router-dom';
@@ -23,9 +23,9 @@ const Login = () => {
           <label htmlFor="inputPassword" className="form-label">Contraseña</label>
           <input type="password" className="form-control" id="inputPassword" placeholder="Ingresa tu contraseña" />
         </div>
-        <Link to='/'>Iniciar sesión</Link> 
+        <Link to='/login'>Iniciar sesión</Link> 
         {/* <button type="submit" className="btn btn-primary btn-lg">Iniciar sesión</button> */}
-        <p id="footer">¿Olvidaste tu contraseña? <a href="#formOne" className="text-decoration-none">Recuperarla</a> </p>
+        <p id="footer">¿Olvidaste tu contraseña? <Link to='../password-reset' className="text-decoration-none">Recuperarla</Link> </p>
       </form>
     </div>
   </div>
