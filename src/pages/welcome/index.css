@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 45%;
+    padding-top: 5%;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+p {
+    font-size: smaller;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: small;
+}
+
+#inputName,
+#inputLastName,
+#inputPhoneNumber,
+#inputBirthday,
+#inputMail,
+#inputPassword,
+#inputVerifyPassword {
+    background-color: #f2f2f2;
+}
+
+button {
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+}
+
+.logo {
+    width: 50%;
+}
+
+#formTwo,
+#formLogin {
+    width: 80%;
+}
