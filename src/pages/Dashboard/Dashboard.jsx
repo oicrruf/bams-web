@@ -11,7 +11,7 @@ const Dashboard = () => {
           <div className="container-fluid">
             <a className="navbar-brand text-light" href="#">BAMS</a>
             <div className="d-flex flex-row justify-content-center align-items-center text-light">
-            <p className='mb-0 pe-2'>Jaqueline flores <br/> Administrador</p>
+            <p className="mb-0 pe-2 text-light">Jaqueline flores <br/> Administrador</p>
 
             <Link to='../Login'>
             <i className="bi bi-person-circle text-light fs-2 d-inline-block align-text-top"></i>
@@ -53,6 +53,5 @@ const Dashboard = () => {
     </>
   )
 }
-
 
 export default Dashboard
