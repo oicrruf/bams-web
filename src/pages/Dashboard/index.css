@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-link:hover{
+    width: 100%;
+    background-color: rgba(187, 144, 228, 0.5);
+    font-weight: bold;
+}
+
+.bi-building-add{
+    font-size: 150px;
+}
