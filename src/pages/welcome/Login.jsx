@@ -23,8 +23,7 @@ const Login = () => {
           <label htmlFor="inputPassword" className="form-label">Contraseña</label>
           <input type="password" className="form-control" id="inputPassword" placeholder="Ingresa tu contraseña" />
         </div>
-        <Link to='/login'>Iniciar sesión</Link> 
-        {/* <button type="submit" className="btn btn-primary btn-lg">Iniciar sesión</button> */}
+        <Link to='/Dashboard' className="btn btn-primary btn-lg">Iniciar sesión</Link> 
         <p id="footer">¿Olvidaste tu contraseña? <Link to='../password-reset' className="text-decoration-none">Recuperarla</Link> </p>
       </form>
     </div>

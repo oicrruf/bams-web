@@ -45,7 +45,7 @@ const Dashboard = () => {
               {/*Contenido*/}
               <i className="bi bi-building-add text-secondary" />
               <h5 style={{ margin: '2%' }}>¡Iniciemos! agrega tu primer inmueble</h5>
-              <Link to='../Login' className="btn btn-primary" href="#">+ Agregar inmueble</Link>
+              <Link to='#' className="btn btn-primary">+ Agregar inmueble</Link>
             </div>
           </div>
         </div>

@@ -28,6 +28,14 @@ const router = createBrowserRouter([
     element: <Login/>,
   },
   {
+    path: "/password-reset",
+    element: <PasswordReset/>,
+  },
+  {
+    path: "/password-update",
+    element: <PasswordUpdateForm/>,
+  },
+  {
     path: "/Dashboard",
     element: <Dashboard/>,
   },
