@@ -13,6 +13,8 @@ import Login from './pages/welcome/Login.jsx';
 import PasswordReset from './pages/welcome/PasswordReset.jsx';
 import PasswordUpdateForm from './pages/welcome/PasswordUpdateForm.jsx';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import RegisterBuild from './pages/Dashboard/RegisterBuild.jsx';
+import DashboardWithBuild from './pages/Dashboard/DashboardWithBuild.jsx';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
   {
     path: "/Dashboard",
     element: <Dashboard/>,
+  },
+  {
+    path: "/RegisterBuild",
+    element: <RegisterBuild/>,
+  },
+  {
+    path: "/DashboardWithBuild",
+    element: <DashboardWithBuild/>,
   },
 ]);
 

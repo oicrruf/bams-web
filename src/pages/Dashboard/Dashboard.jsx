@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 import { Link } from 'react-router-dom';
 
@@ -11,11 +10,11 @@ const Dashboard = () => {
           <div className="container-fluid">
             <a className="navbar-brand text-light" href="#">BAMS</a>
             <div className="d-flex flex-row justify-content-center align-items-center text-light">
-            <p className="mb-0 pe-2 text-light">Jaqueline flores <br/> Administrador</p>
+              <p className="mb-0 pe-2 text-light">Jaqueline flores <br /> Administrador</p>
 
-            <Link to='../Login'>
-            <i className="bi bi-person-circle text-light fs-2 d-inline-block align-text-top"></i>
-            </Link>
+              <Link to='../Login'>
+                <i className="bi bi-person-circle text-light fs-2 d-inline-block align-text-top"></i>
+              </Link>
             </div>
           </div>
         </nav>
@@ -40,7 +39,8 @@ const Dashboard = () => {
             </nav>
           </div>
           {/*Area de visualizacion*/}
-          <div className="bg-body-secondary d-flex align-items-end " style={{ width: '100%' }}>
+          <div className="bg-body-secondary d-flex flex-column" style={{ width: '100%' }}>
+            <h3 className="text-start ms-3 mt-3 text-dark" >Inmuebles</h3>
             <div className="d-flex flex-column justify-content-center align-items-center shadow p-3 mb-5 bg-body-tertiary rounded" style={{ width: '96%', height: '80%', margin: '2%' }}>
               {/*Contenido*/}
               <i className="bi bi-building-add text-secondary" />
