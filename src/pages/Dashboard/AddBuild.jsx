@@ -1,7 +1,7 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const RegisterBuild = () => {
+const AddBuild = () => {
   return (
     <>
       <div>
@@ -32,7 +32,7 @@ const RegisterBuild = () => {
             <nav className="nav flex-column">
               <Link
                 to="../Dashboard"
-                className="nav-link text-dark icon-link icon-link-hover "
+                className="nav-link text-dark icon-link icon-link-hover"
                 style={{ bsIconLinkTransform: "translate3d(0, -.125rem, 0)" }}
               >
                 <i
@@ -67,6 +67,7 @@ const RegisterBuild = () => {
                 to="../"
                 className="nav-link text-dark icon-link icon-link-hover"
                 style={{ bsIconLinkTransform: "translate3d(0, -.125rem, 0)" }}
+                href="#"
               >
                 <i
                   className="bi bi-box-arrow-right fs-2 text-primary d-flex justify-content-center"
@@ -82,71 +83,19 @@ const RegisterBuild = () => {
             style={{ width: "100%" }}
           >
             <h3 className="text-start ms-3 mt-3 text-dark">Inmuebles</h3>
+            {/* Contenido del dashboard */}
             <div
-              className="d-flex flex-column justify-content-center align-items-center shadow p-3 mb-5 bg-body-tertiary rounded"
+              className="container d-flex flex-column justify-content-center align-items-center shadow p-3 mb-5 bg-body-tertiary rounded"
               style={{ width: "96%", height: "80%", margin: "2%" }}
             >
-              <h4>Datos del inmueble</h4>
-              <form>
-                <div className="mb-3">
-                  <label htmlFor="InputNameBuild" className="form-label">
-                    Nombre
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputNamebuild"
-                    placeholder="Ingresa el nombre"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputAdress" className="form-label">
-                    Dirección
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputAdress"
-                    placeholder="Ingresa la dirección"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputCity" className="form-label">
-                    Ciudad
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputCity"
-                    placeholder="Ingresa la ciudad"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputState" className="form-label">
-                    Estado
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputState"
-                    placeholder="Ingresa el estado"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputPostalCode" className="form-label">
-                    Código Postal
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputPostalCode"
-                    placeholder="Ingresa el código postal"
-                  />
-                </div>
-                <Link to="../Buildings" className="btn btn-primary mx-auto">
-                  Crear inmueble
-                </Link>
-              </form>
+              {/*Contenido*/}
+              <i className="bi bi-building-add text-secondary" />
+              <h5 style={{ margin: "2%" }}>
+                ¡Iniciemos! agrega tu primer inmueble
+              </h5>
+              <Link to="../RegisterBuild" className="btn btn-primary">
+                + Agregar inmueble
+              </Link>
             </div>
           </div>
         </div>
@@ -155,4 +104,4 @@ const RegisterBuild = () => {
   );
 };
 
-export default RegisterBuild;
+export default AddBuild;

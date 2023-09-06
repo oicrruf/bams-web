@@ -4,17 +4,16 @@ import App from './App.jsx'
 import './index.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Register from './pages/welcome/Register.jsx';
 import Login from './pages/welcome/Login.jsx';
 import PasswordReset from './pages/welcome/PasswordReset.jsx';
 import PasswordUpdateForm from './pages/welcome/PasswordUpdateForm.jsx';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
 import RegisterBuild from './pages/Dashboard/RegisterBuild.jsx';
-import DashboardWithBuild from './pages/Dashboard/DashboardWithBuild.jsx';
+import Buildings from './pages/Dashboard/Buildings.jsx'
+import AddBuild from './pages/Dashboard/AddBuild.jsx';
+import Users from './pages/Dashboard/Users.jsx';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
     element: <PasswordUpdateForm/>,
   },
   {
-    path: "/Dashboard",
+    path: "/dashboard",
     element: <Dashboard/>,
   },
   {
@@ -46,9 +45,18 @@ const router = createBrowserRouter([
     element: <RegisterBuild/>,
   },
   {
-    path: "/DashboardWithBuild",
-    element: <DashboardWithBuild/>,
+    path: "/Buildings",
+    element: <Buildings/>,
   },
+  {
+    path: "/AddBuild",
+    element: <AddBuild/>,
+  },
+  {
+    path: "/Users",
+    element: <Users/>,
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

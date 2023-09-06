@@ -1,7 +1,7 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const RegisterBuild = () => {
+const Users = () => {
   return (
     <>
       <div>
@@ -67,6 +67,7 @@ const RegisterBuild = () => {
                 to="../"
                 className="nav-link text-dark icon-link icon-link-hover"
                 style={{ bsIconLinkTransform: "translate3d(0, -.125rem, 0)" }}
+                href="#"
               >
                 <i
                   className="bi bi-box-arrow-right fs-2 text-primary d-flex justify-content-center"
@@ -86,11 +87,11 @@ const RegisterBuild = () => {
               className="d-flex flex-column justify-content-center align-items-center shadow p-3 mb-5 bg-body-tertiary rounded"
               style={{ width: "96%", height: "80%", margin: "2%" }}
             >
-              <h4>Datos del inmueble</h4>
+              <h4>Registrar nuevo usuario</h4>
               <form>
                 <div className="mb-3">
                   <label htmlFor="InputNameBuild" className="form-label">
-                    Nombre
+                    Nombre (s)
                   </label>
                   <input
                     type="name"
@@ -101,51 +102,35 @@ const RegisterBuild = () => {
                 </div>
                 <div className="mb-3">
                   <label htmlFor="InputAdress" className="form-label">
-                    Dirección
+                    Teléfono
                   </label>
                   <input
                     type="name"
                     className="form-control bg-body-secondary"
                     id="InputAdress"
-                    placeholder="Ingresa la dirección"
+                    placeholder="Ingresa el teléfono"
                   />
                 </div>
                 <div className="mb-3">
                   <label htmlFor="InputCity" className="form-label">
-                    Ciudad
+                    Correo electrónico
                   </label>
                   <input
                     type="name"
                     className="form-control bg-body-secondary"
                     id="InputCity"
-                    placeholder="Ingresa la ciudad"
+                    placeholder="Ingresa el correo electrónico"
                   />
                 </div>
-                <div className="mb-3">
-                  <label htmlFor="InputState" className="form-label">
-                    Estado
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputState"
-                    placeholder="Ingresa el estado"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputPostalCode" className="form-label">
-                    Código Postal
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputPostalCode"
-                    placeholder="Ingresa el código postal"
-                  />
-                </div>
-                <Link to="../Buildings" className="btn btn-primary mx-auto">
-                  Crear inmueble
+                <div className="d-flex flex-row ">
+                <Link to="../Dashboard" className="btn btn-outline-primary mx-auto">
+                  Cancelar
                 </Link>
+                <Link to="../Dashboard" className="btn btn-primary mx-auto">
+                  Crear Usuario
+                </Link>
+
+                </div>
               </form>
             </div>
           </div>
@@ -155,4 +140,4 @@ const RegisterBuild = () => {
   );
 };
 
-export default RegisterBuild;
+export default Users;

@@ -1,7 +1,7 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const RegisterBuild = () => {
+const Buildings = () => {
   return (
     <>
       <div>
@@ -22,7 +22,7 @@ const RegisterBuild = () => {
             </div>
           </div>
         </nav>
-
+        {/* Visualizador de contenido */}
         <div className="contentViewer d-flex ">
           {/*Barra de navegacion lateral*/}
           <div
@@ -82,71 +82,72 @@ const RegisterBuild = () => {
             style={{ width: "100%" }}
           >
             <h3 className="text-start ms-3 mt-3 text-dark">Inmuebles</h3>
+            {/* Contenedor de app */}
             <div
-              className="d-flex flex-column justify-content-center align-items-center shadow p-3 mb-5 bg-body-tertiary rounded"
+              className="d-flex flex-column shadow p-3 mb-5 bg-body-tertiary rounded"
               style={{ width: "96%", height: "80%", margin: "2%" }}
             >
-              <h4>Datos del inmueble</h4>
-              <form>
-                <div className="mb-3">
-                  <label htmlFor="InputNameBuild" className="form-label">
-                    Nombre
-                  </label>
+              {/* Barra de navegacion del contenido */}
+              <div className="navbarContent d-flex flex-row  align-items-center w-100">
+                <div className="form form-control d-flex flex-row justify-content-center align-items-center">
+                  <i className="bi bi-search me-2" />
                   <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputNamebuild"
-                    placeholder="Ingresa el nombre"
+                    type="text"
+                    className="form-control form-input border-0"
+                    placeholder="Search anything..."
                   />
+                  <span className="left-pan">
+                    <i className="fa fa-microphone" />
+                  </span>
                 </div>
-                <div className="mb-3">
-                  <label htmlFor="InputAdress" className="form-label">
-                    Dirección
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputAdress"
-                    placeholder="Ingresa la dirección"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputCity" className="form-label">
-                    Ciudad
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputCity"
-                    placeholder="Ingresa la ciudad"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputState" className="form-label">
-                    Estado
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputState"
-                    placeholder="Ingresa el estado"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="InputPostalCode" className="form-label">
-                    Código Postal
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control bg-body-secondary"
-                    id="InputPostalCode"
-                    placeholder="Ingresa el código postal"
-                  />
-                </div>
-                <Link to="../Buildings" className="btn btn-primary mx-auto">
-                  Crear inmueble
+                <button
+                  type="button"
+                  className="btn btn-outline-primary mx-2 d-flex flex-row"
+                >
+                  <i className="bi bi-search me-2 text-primary" />
+                  Buscar
+                </button>
+                <Link to="../AddBuild" className="btn btn-primary">
+                  + Agregar inmueble
                 </Link>
-              </form>
+              </div>
+              {/* Tabla de datos */}
+              <table className="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Inmueble</th>
+                    <th scope="col">Direccion</th>
+                    <th scope="col"># de departamentos</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Insurgentes 890</th>
+                    <td>Insurgentes 890, Puebla de Zaragoza, Puebla, 72492</td>
+                    <td>10</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Las rosas</th>
+                    <td>Calle 2 #309, Pantitlan, CDMX, México, 09848</td>
+                    <td>12</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Condominio sinaloa</th>
+                    <td>Sinaloa 195. Roma Norte, CDMX, México, 09848</td>
+                    <td>8</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -155,4 +156,4 @@ const RegisterBuild = () => {
   );
 };
 
-export default RegisterBuild;
+export default Buildings;
