@@ -1,5 +1,6 @@
 import "./index.css";
 import { Link } from "react-router-dom";
+import logoBams from '../../assets/logoBams.svg'
 
 const Dashboard = () => {
   return (
@@ -8,8 +9,9 @@ const Dashboard = () => {
         {/*Barra de navegacion superior*/}
         <nav className="navbar bg-primary">
           <div className="container-fluid">
+          <img src={logoBams}/>
             <a className="navbar-brand text-light" href="#">
-              BAMS
+            
             </a>
             <div className="d-flex flex-row justify-content-center align-items-center text-light">
               <p className="mb-0 pe-2 text-light">

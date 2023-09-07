@@ -1,6 +1,7 @@
 import './index.css';
 import Logo from './Logo.png';
 import { Link } from 'react-router-dom';
+import logoBamsAzul from '../../assets/logoBams_azul.svg'
 
 const Register = () => {
   return (
@@ -11,7 +12,7 @@ const Register = () => {
     </div>
     <div>
       <form id="formRegister">
-        <h1>Bienvenid@s <br /> a BAMS</h1>
+        <h1>Bienvenid@s <br /> a <img src={logoBamsAzul}/></h1>
         <p>¿Eres administrador de un condominio?
           <br />
           Regístrate y mantén en orden las cuotas.</p>

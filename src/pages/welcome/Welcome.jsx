@@ -1,12 +1,13 @@
 import './index.css';
 import { Link } from 'react-router-dom';
+import logoBamsAzul from '../../assets/logoBams_azul.svg'
 
 const Welcome = () => {
   return (
     <div className="container">
       <div id="screenInit">
         <form id="formOne">
-          <h1>Bienvenid@s <br /> a BAMS</h1>
+          <h1>Bienvenid@s <br /> a <img src={logoBamsAzul}/></h1>
           <p>¿Eres administrador de un condominio?
             <br />
             Regístrate y mantén en orden las cuotas.</p>

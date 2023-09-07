@@ -1,6 +1,7 @@
 import './index.css';
 import Logo from './Logo.png';
 import { Link } from 'react-router-dom';
+import logoBamsAzul from '../../assets/logoBams_azul.svg'
 
 const Login = () => {
   return (
@@ -12,7 +13,7 @@ const Login = () => {
     </div>
     <div>
       <form id="formLogin">
-        <h1>Bienvenid@s <br /> a BAMS</h1>
+        <h1>Bienvenid@s <br /> a <img src={logoBamsAzul}/></h1>
         <p>Inicia sesión con tu usuario y tu contraseña</p>
         <div className="mb-3">
           <label htmlFor="inputMail" className="form-label">Correo electrónico</label>
