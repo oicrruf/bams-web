@@ -115,35 +115,103 @@ const Buildings = () => {
               <table className="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">Inmueble</th>
-                    <th scope="col">Direccion</th>
-                    <th scope="col"># de departamentos</th>
-                    <th scope="col">Acciones</th>
+                    <th scope="col">Departamento</th>
+                    <th scope="col">Adeudos anteriores</th>
+                    <th scope="col">Cuota extraordinaria</th>
+                    <th scope="col">Pago mantenimiento</th>
+                    <th scope="col">Total de adeudo</th>
+                    <th scope="col">Pagos</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><Link to="../Propiedades"> Insurgentes 890 </Link></th>
-                    <td>Insurgentes 890, Puebla de Zaragoza, Puebla, 72492</td>
-                    <td>10</td>
+                    <th scope="row">101</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
                     <td>
                       <i className="bi bi-check2-square" />
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Las rosas</th>
-                    <td>Calle 2 #309, Pantitlan, CDMX, México, 09848</td>
-                    <td>12</td>
+                    <th scope="row">102</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
                     <td>
                       <i className="bi bi-check2-square" />
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Condominio sinaloa</th>
-                    <td>Sinaloa 195. Roma Norte, CDMX, México, 09848</td>
-                    <td>8</td>
+                    <th scope="row">201</th>
+                    <td>Adeudo $1000</td>
+                    <td> - </td>
+                    <td>$ 0 </td> 
+                    <td>$ 1400</td>
                     <td>
                       <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">202</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">301</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">302</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">401</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">402</th>
+                    <td>AL CORRIENTE</td>
+                    <td> - </td>
+                    <td>$ 400</td>
+                    <td>$ 0</td>
+                    <td>
+                      <i className="bi bi-check2-square" />
+                    </td>
+                  </tr>
+                  <tr className="table-primary">
+                    <th scope="row">Total</th>
+                    <td> - </td>
+                    <td>  </td>
+                    <td> $ 2800</td>
+                    <td> $ 1400</td>
+                    <td>
+                      <i className="" />
                     </td>
                   </tr>
                 </tbody>

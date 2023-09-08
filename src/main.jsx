@@ -14,6 +14,7 @@ import RegisterBuild from './pages/Dashboard/RegisterBuild.jsx';
 import Buildings from './pages/Dashboard/Buildings.jsx'
 import AddBuild from './pages/Dashboard/AddBuild.jsx';
 import Users from './pages/Dashboard/Users.jsx';
+import Propiedades from './pages/Dashboard/Propiedades.jsx'
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
     path: "/Users",
     element: <Users/>,
   },
+  {
+    path: "/Propiedades",
+    element: <Propiedades/>,
+  }
 
 ]);
 
