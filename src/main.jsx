@@ -15,6 +15,7 @@ import Buildings from './pages/Dashboard/Buildings.jsx'
 import AddBuild from './pages/Dashboard/AddBuild.jsx';
 import Users from './pages/Dashboard/Users.jsx';
 import Propiedades from './pages/Dashboard/Propiedades.jsx'
+import PagoBill from './pages/Dashboard/PagoBill.jsx';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/Propiedades",
     element: <Propiedades/>,
+  },
+  {
+    path: "/PagoBill",
+    element: <PagoBill/>,
   }
 
 ]);

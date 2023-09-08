@@ -1,7 +1,7 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const Buildings = () => {
+const Propiedades = () => {
   return (
     <>
       <div>
@@ -81,7 +81,7 @@ const Buildings = () => {
             className="bg-body-secondary d-flex flex-column"
             style={{ width: "100%" }}
           >
-            <h3 className="text-start ms-3 mt-3 text-dark">Inmuebles</h3>
+            <h3 className="text-start ms-3 mt-3 text-dark">Pago de mantenimiento</h3>
             {/* Contenedor de app */}
             <div
               className="d-flex flex-column shadow p-3 mb-5 bg-body-tertiary rounded"
@@ -131,7 +131,9 @@ const Buildings = () => {
                     <td>$ 400</td>
                     <td>$ 0</td>
                     <td>
+                    <Link to="/PagoBill">
                       <i className="bi bi-check2-square" />
+                    </Link>
                     </td>
                   </tr>
                   <tr>
@@ -224,4 +226,4 @@ const Buildings = () => {
   );
 };
 
-export default Buildings;
+export default Propiedades;
